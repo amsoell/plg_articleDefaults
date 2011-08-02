@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.7" type="plugin" group="content">
+	<name>Content - Article Defaults</name>
+	<author>Andy Soell</author>
+	<creationDate>August 2, 2011</creationDate>
+	<copyright>Copyright (C) 2011 The Genteel</copyright>
+	<authorEmail>andy@teamsoell.com</authorEmail>
+	<authorUrl>http://andy.teamsoell.com</authorUrl>
+	<version>1.0</version>
+	<description>Override defaults for newly created articles</description>
+	<files>
+		<filename plugin="articleDefaults">articleDefaults.php</filename>
+	</files>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field name="state" type="list" description="" label="Publish state">
+                    <option value="">Article specified</option>
+                    <option value="1">Published</option>
+                    <option value="0">Unpublished</option>
+                    <option value="-1">Archived</option>
+                </field>
+                <field name="access" type="list" description="" label="Access level">
+                    <option value="">Article specified</option>
+                    <option value="0">Public</option>
+                    <option value="1">Registered</option>
+                    <option value="2">Special</option>
+                </field>                
+            </fieldset>
+        </fields>
+    </config>
+</extension>
+
+
