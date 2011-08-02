@@ -13,15 +13,15 @@
 	</files>
     <config>
         <fields name="params">
-            <fieldset name="basic">
-                <field name="state" type="list" description="" label="Publish state">
-                    <option value="">Article specified</option>
+            <fieldset name="Override">
+                <field name="state" type="list" description="Override newly created articles' publish state" label="Publish state">
+                    <option value="">- Do not override -</option>
                     <option value="1">Published</option>
                     <option value="0">Unpublished</option>
                     <option value="-1">Archived</option>
                 </field>
-                <field name="access" type="list" description="" label="Access level">
-                    <option value="">Article specified</option>
+                <field name="access" type="list" description="Override newly created articles' access state" label="Access level">
+                    <option value="">- Do not override -</option>
                     <option value="0">Public</option>
                     <option value="1">Registered</option>
                     <option value="2">Special</option>
